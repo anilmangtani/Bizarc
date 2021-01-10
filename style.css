@@ -1,0 +1,752 @@
+
+body{
+   /* border: 5px dotted black;*/
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    word-spacing: 27px; 
+    right: 0;
+    padding-right: 10px;
+    /*border: 5px solid violet;*/
+    height: 40%;
+}
+
+header a{
+    color: black;
+    text-decoration: none;
+    /*border: 10px double violet;*/
+    
+    
+}
+
+header .right-side{
+    /*border: solid 6px blue;*/
+    position: relative;
+    top: 40px;
+    word-spacing: 25px;
+    float: right;
+    right: 15px;
+    font-weight: bold;
+
+    
+    
+}
+header img{
+
+   /*border: 10px dotted black;*/
+    position: relative;
+    width: 20%;
+    left: 20px;
+    height: 30%;
+    
+}
+
+
+
+header a:hover{
+    color: darkblue;
+    transform: .4s;
+    transition: .4s;
+
+    
+}
+
+                /*SECTION PART 1*/
+ /*css and html container*/
+
+.slide-container{
+    margin-top: 60px;
+    width: 100%;
+    height: 500px;
+    /*margin-left: auto;
+    margin-right:auto;*/
+    overflow: hidden;
+    text-align: center;
+}           
+.image-container img{
+    height: 600px;
+    width: 1517px;
+    
+}
+
+.image-container{
+    width: 4557px; /*3 images * 800px(slide container width that will fit all 3 images in the container)*/
+    height: 500px;
+    position: relative;
+    transition: left 2s;
+    -webkit-transition: left 2s; /*make sure it work on the chrome*/
+    -moz-transition:left 2s; /*make sure it work on the mozrilla*/
+}
+
+.slider-image{
+    float: left;
+     margin: 0px;
+    padding: 0px;
+}
+
+.button-container{
+    top: -20px; 
+    position: relative;
+    text-align: center;
+    
+}
+
+
+.slider-button{
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border-radius: 5px;
+    background-color:mintcream;
+    border:white solid 2px;
+
+}
+
+.text-container{
+    right: auto;
+    left: auto;
+    text-align: center;
+}
+.text{
+    display: inline-block;
+}
+
+
+#slider-image-1:target ~ .image-container{
+    left: 0px;
+}
+
+#slider-image-2:target ~ .image-container{
+    left:-1000px;
+}
+
+#slider-image-3:target ~ .image-container{
+    left:-2000px;
+}
+   
+
+
+/*Section 2*/
+
+.form-image{
+    position: relative;
+    height: 500px;
+    width: 100%;    
+}
+
+.form-image img{
+    margin-top: 20px ;
+    height: 250px;
+    width: 500px;
+    box-shadow: 0px 0px 10px 10px gray;
+}
+
+
+/*image 1  : child class*/
+.imagefirst{
+    float: left;
+    position: absolute;
+    left: 15%;
+    /*border:3px solid blue;*/
+}
+
+/*image second : child class*/
+.imagescnd{
+    
+    position: absolute;
+    float: right;
+    right: 15%;
+    /*border:3px solid blue;*/
+}
+
+/*image 1 text*/
+
+.imagefirst-text{
+    width: 500px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    /*border:3px solid violet;*/
+    
+}
+
+/*image 2 text*/
+.imagescnd-text{
+    width: 500px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    /*border:3px solid violet;*/
+}
+
+h2{
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+}
+
+/*fill form link*/
+
+.fillform-one{
+    border: 1px solid violet;
+    height: 45px;
+    width: 150px;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+    border-radius: 3px;
+}
+
+.fillform-one a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/*FILL FORM FOR THE RESI. INT.*/
+.fillform-two{
+    
+    height: 45px;
+    width: 150px;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+    border-radius: 3px;
+}
+
+.fillform-two a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.fillform-one:hover{
+    width: 170px;
+    height: 50px;
+    transform: .6s;
+    transition: .5s;
+
+}
+
+.fillform-two:hover{
+    width: 170px;
+    height: 50px;
+    transform: .6s;
+    transition: .5s;
+    
+
+}
+
+/*session 3 : book virtual session*/
+
+section h1.bvs-heading{
+    margin-top: 1px;
+    text-align: center;
+    font-size: 50px;
+}
+
+/*parent class of left-side-session*/
+
+section .session{
+    position: relative;
+    height: 450px;
+    width: 100%;
+}
+
+/*left side session*/
+
+.left-side-session{
+    
+    position: absolute;
+    float: left;
+    left: 15%;
+    text-align: center;
+    height: 400px;
+    width: 35%;
+}
+
+.image-left-session img{
+    height: 220px;
+    width: 70%;
+    box-shadow: 0 0 10px 7px gray;
+}
+
+.text-left-session{
+    font-size: larger;
+    font-weight: bold;
+    margin-top: 25px;
+}
+.time-left-session{
+    font-size: larger;
+    font-weight: bold;
+    margin-top: 25px ;
+}
+
+/*Right side session*/
+
+.right-side-session{
+    
+    position: absolute;
+    float: right;
+    right : 10%;
+    text-align: center;
+    height: 400px;
+    width: 35%;
+}
+
+.image-right-session{
+    height: 220px;
+    margin-left: 80px;
+    width: 70%;
+    box-shadow: 0 0 10px 7px gray;
+}
+
+.text-right-session{
+    font-size: larger;
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+.time-right-session{
+    font: larger bold;
+    margin-top: 25px;
+}
+
+/*book new session button*/
+
+.book-now-session{
+    text-align: center;
+    height: 50px;
+    width: 150px;
+    border-radius: 3px;
+    background-color: black;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    top: 80%;
+    
+}
+
+.book-now-session a{
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 25px;
+    color: white;
+    position: relative;
+    top: 15px;
+    
+}
+
+/*PRACTICE OF THE PAGE*/
+
+.practice{
+    height: 550px;
+    width: 100%;
+    position: relative;
+    background-color: lightslategray;
+}
+
+.practice-heading{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 2px;
+    text-align: center;
+    height: 15%;
+    font-size: 80px;
+    color: white;
+    text-shadow: 0px 0px 15px black
+}
+/*PARENT CHILD OF ALL CONTENT*/
+section .practice-content{
+    position: absolute;
+    top: 110px;
+    height: 360px;
+    width: 100%;
+
+}
+
+/*4 different boxes*/
+
+.practice-content .philosophy-practice{
+    position: absolute;
+    left: 3%;
+    height: 80%;  
+    width: 300px;
+    background-color: white;
+    box-shadow: 0px 0px 15px black;
+
+}
+
+.practice-content .interior-practice{
+    position: absolute;
+    left: 27%;
+    height: 100%;  
+    width: 300px;
+    background-color: white;
+    box-shadow: 0px 0px 15px black;
+}
+
+.practice-content .styling-practice{
+    position: absolute;
+    right: 27%;
+    height: 100%;  
+    width: 300px;
+    background-color: white;
+    box-shadow: 0px 0px 15px black;
+}
+
+.practice-content .furniture-practice{
+    position: absolute;
+    right: 3%;
+    height: 80%;  
+    width: 300px;
+    background-color: white;
+    box-shadow: 0px 0px 15px black;
+}
+
+.practice-content h2{
+    position: relative;
+    margin-top: 5px;
+    height: 80px;
+    text-align: center;
+    color: black;
+    font-size: 25px;
+    font-family: 'Playfair Display SC',Georgia,"Times New Roman",serif;;
+    font-weight: bold;
+    
+}
+
+.practice-content p{
+    position: relative;
+    text-align: center;
+    color: black;
+    font-family: cursive;
+    font-weight: bold;
+}
+
+.practice .in-details-practice{
+    border-bottom: 1px solid black;
+    height: 30px; 
+    width: 6%;
+    position: relative;
+    top: 360px;
+    left: 50%;
+    text-align: center;
+       
+}
+
+.practice .in-details-practice a{
+    position: relative;
+    color: red;
+    text-decoration: none;
+    top: 5px; 
+}
+
+/*About part information*/
+.about-part{
+    height: 600px;
+    width: 100%;
+    padding-top: 20px;
+    position: relative;
+    background-image: linear-gradient(90deg, lightblue 70%, lightpink 30%);
+}
+
+section .about-text{
+    margin-left: 15%;
+    width: 40%;
+    height: 80%;
+}
+
+/*Section about heading*/
+
+section .about-text h1{
+    border-top: 1px solid black ;
+    text-align: left;
+    font-size: 40px;
+    margin-bottom: 2px;
+}
+/*section of about text*/
+section .about-text h2{
+    
+    margin-top: 1px;
+    text-align: left;
+    font-size: 50px;
+    font-family: 'Playfair Display SC',Georgia,"Times New Roman",serif;
+    margin-bottom: 15px;
+}
+/*section about p tag*/
+section .about-text p{
+    margin-top: 0;
+    font-size: 20px;
+    font-family: cursive;
+}
+/*section of about link*/
+section .about-text .about-me-link{
+    text-align: left;   
+    width: 70px;
+    height: 25px;
+    border-bottom: 1px solid black; 
+}
+
+section .about-text .about-me-link a{
+    text-decoration: none;
+    color: black;
+    width: 25px;
+    
+}
+/*About me : image border*/
+
+section .about-part .about-images{
+    position: absolute;
+    top: 55px;
+    right: 15%;    
+    height: 450px;
+    width: 400px;
+    border: 1px solid black;
+    background-color: white;
+}
+
+/*image in the about session*/
+.about-images .image img{
+    width: 350px;
+    height: 400px;
+    padding: 20px;
+}
+
+/*working information*/
+.working-info{
+    height: 1000px;
+    width: 100%;
+}
+/*working info :how the work box*/
+.working-info .working-heading{
+    height: 180px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+}
+/*h1 and p in the working information of heading*/
+.working-info .working-heading h1{
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: 40px;
+}
+.working-info .working-heading p{
+    text-align: center;
+    font-family: cursive;
+    font-weight: bold;
+    font-size: 17px;
+}
+/*Stages of the working information*/
+section .stages{
+    width: auto;
+    height: 820px;
+    position: relative;
+    margin-top: 0px
+}
+
+.stages h2{
+    text-align: center;
+    font-size: 15px;
+}
+
+section .stages .stage-one{
+    position: absolute;
+    height: 350px;
+    width: 300px;
+    left: 15%;
+    text-align: center;
+}
+section .stages .stage-two{
+    position: absolute;
+    height: 350px;
+    width: 300px;
+    left: 40%;
+    text-align: center;
+}
+section .stages .stage-three{
+    position: absolute;
+    height: 350px;
+    width: 300px;
+    left: 66%;
+    text-align: center;
+}
+section .stages .stage-four{
+    position: absolute;
+    height: 350px;
+    width: 300px;
+    left: 40%;
+    top: 48%;
+    text-align: center;
+}
+
+section .stages img{
+    height: 200px;
+    width: 200px;
+}
+
+section .stages h1{
+    margin-bottom: 0;
+    margin-top: 2px;
+}
+
+section .stages p{
+    font-family: cursive;
+    margin-top: 0;
+}
+
+/*BLOGS*/
+
+section .our-blogs{
+    height: 700px;
+    width: auto;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+
+section .our-blogs .heading h1{
+    border-top: 2px solid black ;
+    padding-top: 20px;
+    height: 60px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section .blogs .blog-one{
+    border: 1px solid black;
+    height: 450px;
+    width: 300px;
+    position: absolute;
+    left: 90px;
+    
+}
+
+section .blogs .blog-one img{
+    height: 150px;
+    width: 300px;
+}
+
+section .blogs {
+    margin-top: 0px;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    color: black;
+}
+
+section .blogs .blog-one a{
+    text-decoration: none;
+    color: black;
+    font-weight: lighter;
+}
+
+section .blogs .blog-one h1{
+    font-weight: lighter;
+    margin-left: 15px;
+}
+section .blogs .blog-one h2{
+    font-weight: lighter;
+    margin-left: 15px;
+    font-size: 10px;
+}
+
+section .blogs .blog-one p{
+    font-weight: lighter;
+    margin-left: 15px;
+    font-size: 15px;
+    font-family: cursive;
+    color: gray;
+}
+
+/*fucking view more link*/
+section .blog-viewmore{
+    position: relative;
+    top: 500px;
+    left: 49%;
+    width: 100px;
+    font-size: 15px;
+    height: 45px;
+    border-bottom: 3px solid darkgray;
+    text-align: center;
+}
+
+section .blog-viewmore a{
+    text-decoration: none;
+    color: black;
+    position: relative;
+    top: 17px;
+
+}
+
+       /*Footer*/
+footer .last-part{
+    position: relative;
+    height: 200px;
+    width: auto;
+    border: 1px solid black;
+    background-image: linear-gradient(180deg, black 90%, grey 10%);
+}
+
+.last-part .self-information{
+    position: absolute;
+    height: 180px;
+    width: 25%;
+    color: white;
+    text-align: center;
+}
+
+.last-part .address{
+    position: absolute;
+    left: 25%;
+    height: 180px;
+    width: 25%;
+    color: white;
+    text-align: center;
+}
+.last-part .want-more{
+    position: absolute;
+    left: 50%;
+    height: 180px;
+    width: 25%;
+    color: white;
+    text-align: center;
+}
+
+.last-part .follow-us{
+    position: absolute;
+    left: 75%;
+    height: 180px;
+    width: 25%;
+    color: white;
+    text-align: center;
+}
+
+.last-part  h1{
+    color: white;
+    font-family: 'Times New Roman', Times, serif ;
+}
+
+.last-part a{
+    text-decoration: none;
+    color: gray;
+}
+
