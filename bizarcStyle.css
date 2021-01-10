@@ -1,3 +1,7 @@
+*{
+    margin: 5px;
+}
+
 header, nav , section , aside , footer{
     display: block;
 }
@@ -15,23 +19,18 @@ header{
     position: fixed;
     height: 12%;
     width: 100%;
-    border: 1px solid black;
 }
 /*navigation bar*/
 nav{
-    position: fixed;
-    height: 12%;
+    position: relative;
+    height: auto;
     width: 100%;
-    border: 1px solid green;
 }
 /*The left side of the navigation bar OR the logo */
-nav .left-nav-bar{
-    position: relative;
-}
+
 nav .left-nav-bar .logo{
     height: 82px;
     width: 160px;
-    border: 1px solid purple;
     text-align: center;
     
 
@@ -43,4 +42,20 @@ nav .left-nav-bar h1{
     border-bottom:1px solid black ;
     border-top: 1px solid black;
     
+}
+
+nav>.left-nav-bar, nav>.right-nav-bar{
+    display: inline-block;
+}
+.right-nav-bar{
+    position: absolute;
+    right: 10vw;
+}
+
+ul{
+    list-style-type: none;
+}
+
+li {
+    display: inline-block;
 }
